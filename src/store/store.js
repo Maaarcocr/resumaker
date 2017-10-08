@@ -48,10 +48,15 @@ const actions = {
   }
 }
 
+const getters = {
+  isUrl: state => state.url !== undefined
+}
+
 // A Vuex instance is created by combining the state, mutations, actions,
 // and getters.
 export default new Vuex.Store({
   state,
   actions,
+  getters,
   mutations
 })
